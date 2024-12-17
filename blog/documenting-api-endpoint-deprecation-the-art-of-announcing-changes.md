@@ -2,6 +2,20 @@
 icon: laptop-code
 cover: ../.gitbook/assets/adp-electronic-communications.jpg
 coverY: 0
+layout:
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: false
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
 # Documenting API Endpoint Deprecation: the Art of Announcing Changes
