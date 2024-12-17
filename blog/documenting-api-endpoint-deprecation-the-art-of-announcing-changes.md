@@ -1,5 +1,7 @@
 ---
 icon: laptop-code
+cover: ../.gitbook/assets/adp-electronic-communications.jpg
+coverY: 0
 ---
 
 # Documenting API Endpoint Deprecation: the Art of Announcing Changes
