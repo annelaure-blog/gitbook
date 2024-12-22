@@ -43,15 +43,15 @@ What does an API have to do to be punished that way?
 
 There are several reasons for deprecating endpoints, which include but are not limited to:
 
-* [ ] **Technical debt**\
+* [x] **Technical debt**\
   Companies sometimes choose to strategically deprecate endpoints relying on an outdated structure, often for performances reasons. Dated systems can get harder and harder to properly maintain as time passes.&#x20;
-* [ ] **Decrease in usage**\
+* [x] **Decrease in usage**\
   Sometimes a feature that used to be very much 'in demand' becomes less popular. It can come from clients 'churning' (turning to competitors), but also from the evolution of the market for specific needs. If an endpoint usage is significantly decreasing, it might be wise to decide to deprecate it to focus the resources on other endpoints providing more value.
-* [ ] **Security issues**\
+* [x] **Security issues**\
   Security protocols and techniques, including cryptographic algorithms, evolve quickly. Endpoints relying on dated protocols that are not considered 'safe' anymore might expose the API users to security risks, and should be deprecated to be replaced by more secure ones.
-* [ ] **Performance reasons**\
+* [x] **Performance reasons**\
   This can go along with technical debt issues. If requests are long to process, or the endpoint provides a full dataset in response instead of a specific set of data (or both), it is best to deprecate it to provide more specific, efficient options.
-* [ ] **Business pivot**\
+* [x] **Business pivot**\
   Among the many reasons for deprecating endpoint is the rare - but possible - business pivot or strategical change of product, which brings a company to build new APIs entirely, or to repurpose some endpoints to perform some entirely new tasks.
 
 ***
@@ -62,19 +62,19 @@ Deprecation are rarely discussed in isolation: they are part of the API roadmap 
 
 Every company has its own process, but it usually follows those general steps:
 
-* [ ] **Strategic Prioritization**\
+* [x] **Strategic Prioritization**\
   Product & technical lead(s) craft the next version's priorities, to better balance user's needs with technical constraints and business goals.\
 
-* [ ] **Collaborative Design**\
+* [x] **Collaborative Design**\
   Once the priorities are clear, the roadmap is transferred to an API team, usually composed of senior technical profiles (engineers and architects) who define the structure and design guidelines. It is usually the stage where technical writers are involved, so we can start documenting the changes to come (_note that I have been asked before to prepare a deprecation notice within 24 hours before the actual deprecation, so anything can happen, but I would not recommend_).\
 
-* [ ] **Validation**\
+* [x] **Validation**\
   Depending on the criticality of the changes, the new API has to be approved by a technical board, and sometimes by executives as well. Legal can be involved too, if applicable.\
 
-* [ ] I**mplementation & Documentation**\
+* [x] I**mplementation & Documentation**\
   That is when the actual changes are made to the API, that changes version (from 1.0 to 2.0 for instance). The chosen endpoints are deprecated, new ones might be added too. This is the perfect moment to update the API documentation, write migration guides, and craft deprecation notice pages and warning messages.\
 
-* [ ] **Communication**\
+* [x] **Communication**\
   As the release of the new version occurs, there should be emails sent to clients, as well as announcements (internal and external). A changelog should list all the changes and be easily accessible in the documentation.
 
 <figure><img src="../.gitbook/assets/15k38e.jpg" alt=""><figcaption></figcaption></figure>
