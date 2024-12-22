@@ -5,12 +5,12 @@ cover: >-
 coverY: 0
 layout:
   cover:
-    visible: true
+    visible: false
     size: full
   title:
     visible: true
   description:
-    visible: true
+    visible: false
   tableOfContents:
     visible: false
   outline:
