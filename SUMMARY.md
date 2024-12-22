@@ -25,6 +25,6 @@
 ## BLOG
 
 * [👾 Start here!](blog/start-here.md)
-* [Documenting API Endpoint Deprecation: the Art of Announcing Changes](blog/documenting-api-endpoint-deprecation-the-art-of-announcing-changes.md)
+* [Documenting API Endpoint Deprecation: the Art of Planning Ahead](blog/documenting-api-endpoint-deprecation-the-art-of-planning-ahead.md)
 * ["You Are Not Expected to Understand This" - 26 Stories Telling the History of Code](blog/you-are-not-expected-to-understand-this-26-stories-telling-the-history-of-code.md)
 * ["Close to the Machine": How Ellen Ullman's books inspired me as a (technical) writer](blog/close-to-the-machine-how-ellen-ullmans-books-inspired-me-as-a-technical-writer.md)
