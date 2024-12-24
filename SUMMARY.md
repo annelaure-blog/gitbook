@@ -28,3 +28,4 @@
 * [Documenting API Endpoint Deprecation: the Art of Planning Ahead](blog/documenting-api-endpoint-deprecation-the-art-of-planning-ahead.md)
 * ["You Are Not Expected to Understand This" - 26 Stories Telling the History of Code](blog/you-are-not-expected-to-understand-this-26-stories-telling-the-history-of-code.md)
 * ["Close to the Machine": How Ellen Ullman's books inspired me as a (technical) writer](blog/close-to-the-machine-how-ellen-ullmans-books-inspired-me-as-a-technical-writer.md)
+* [How one Woman Programmer invented Remote Work in the 1960s: The Story of Dame "Steve" Shirley](blog/how-one-woman-programmer-invented-remote-work-in-the-1960s-the-story-of-dame-steve-shirley.md)
