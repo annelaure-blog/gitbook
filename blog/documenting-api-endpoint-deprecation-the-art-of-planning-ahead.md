@@ -89,12 +89,18 @@ Every company has its own process, but it usually follows those general steps:
 
 ### <mark style="color:purple;">Show the Deprecation Timeline</mark>
 
-Craft a release note to be sent, and a "deprecation" page for the documentation that lists all the coming changes, and especially clarifies **the dates** at which each endpoint will be fully deprecated. \
+Craft a release note to be sent and published in the documentation, as well as a "deprecation" page for the documentation that lists all the coming changes, and especially clarifies **the dates** at which each endpoint will be fully deprecated.&#x20;
+
 The content needs to be reviewed and validated by the API team (if any), and/or by Product, before publication, so it is wise to start working on those content as soon as the list of deprecated endpoints is available.
+
+* A good example of a Deprecation page would be [this one](https://platform.openai.com/docs/deprecations) (from OpenAI). It gives general information about deprecation as well as provide a full 'Deprecation history' archive. I would recommend having this full history published and visible at all time.
+* You can also check this Deprecation release note example from Salesforce [here](https://help.salesforce.com/s/articleView?id=release-notes.rn_api_deprecation.htm\&release=232\&type=5). It provides a list of all versions affected by the change and has a "who, why, how" interesting section.
 
 {% hint style="info" %}
 Deprecations need to be announced in advance to give enough time to the users to adjust. I'd recommend at least three months, a semester, or even a year being better for very popular and/or complex endpoints.
 {% endhint %}
+
+***
 
 ### <mark style="color:purple;">Publish Migration guide(s)</mark>
 
@@ -103,6 +109,8 @@ Write migration guides if there are new alternatives to the deprecated endpoints
 This will ensure that users can transition smoothly to new endpoints without any service interruption. If there will be no alternative provided, this needs to be stated in the documentation in a very clear manner, explaining why (business pivot, technical issue, etc.).&#x20;
 
 The guides need to be published long enough before the actual deprecation to give time to users to adjust. Don't be afraid to be proactive with emailing, either.
+
+***
 
 ### <mark style="color:purple;">Update the Open API Spec</mark>
 
@@ -120,15 +128,19 @@ paths:
 
 ```
 
+***
+
 ### <mark style="color:purple;">Check for Deprecation Notices within the code</mark>&#x20;
 
-Developers often add warnings into the code of the API, which will display a deprecation notice in the header of the request (for REST API). Those are called the Deprecation and the Sunset headers.
+Developers often add warnings into the code of the API, which will display a deprecation notice in the header of the request (for REST API). As a technical writer, you can always ask if this will be implemented or not (it is usually a good practice), and if so, it can be mentioned in the documentation as well.
+
+Those notices are important as they have more chances to be visible to developers handling API requests than traditional emails (but you should still do both).
 
 #### **The Sunset Header (**[**RFC 8594**](https://www.rfc-editor.org/rfc/rfc8594)**)**
 
 The Sunset HTTP response header field allows a server to communicate the fact that a resource is expected to become unresponsive at a specific point in time. The Sunset header contains a single timestamp which advertises the point in time when the resource is expected to become unresponsive.
 
-The Sunset Header is a standardized way to announce deprecation, which is one of the most efficient way to proceed.
+The Sunset Header is a standardized way to announce deprecation, which is one of the most efficient ways to proceed.
 
 ```
 HTTP/1.1 200 OK
@@ -154,7 +166,7 @@ type MyType {
 
 #### **Deprecation notice in the response**
 
-Independently of the header, developers can also add a deprecation warning in the response body of the HTTP request, saying the endpoint will be deprecated soon.&#x20;
+Independently of the header, developers can also add a deprecation warning in the response body of the HTTP request, saying the endpoint will be deprecated soon or is already deprecated.
 
 As a technical writer, you can give it a test, and mention it to the technical teams if you see those are missing. You can also contribute to crafting the warning messages so they are standardized across all channels.&#x20;
 
