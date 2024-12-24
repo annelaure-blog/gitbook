@@ -56,9 +56,11 @@ There are several reasons for deprecating endpoints, which include but are not l
 
 ***
 
-### <mark style="color:purple;">The process of Deprecation</mark>
+### <mark style="color:purple;">The process of API Versioning (and Deprecating)</mark>
 
 Deprecation are rarely discussed in isolation: they are part of the API roadmap and versioning plan, just like the introduction of new endpoints or changes to existing ones.
+
+> "Versioning is always a compromise between improving developer experience and the additional burden of maintaining old versions." - Brandur Leach, talking [about Stripe API versioning](https://stripe.com/blog/api-versioning).
 
 Every company has its own process, but it usually follows those general steps:
 
@@ -83,25 +85,28 @@ Every company has its own process, but it usually follows those general steps:
 
 
 
-### <mark style="color:purple;">How to Document Deprecations</mark>
+## <mark style="color:purple;">How to Document Deprecations</mark>
 
-#### <mark style="color:purple;">Show the Deprecation Timeline</mark>
+### <mark style="color:purple;">Show the Deprecation Timeline</mark>
 
-Craft a release note to be sent, and a "deprecation" page for the documentation that lists all the coming changes, and especially clarifies **the dates** at which each endpoint will be fully deprecated.&#x20;
+Craft a release note to be sent, and a "deprecation" page for the documentation that lists all the coming changes, and especially clarifies **the dates** at which each endpoint will be fully deprecated. \
+The content needs to be reviewed and validated by the API team (if any), and/or by Product, before publication, so it is wise to start working on those content as soon as the list of deprecated endpoints is available.
 
+{% hint style="info" %}
 Deprecations need to be announced in advance to give enough time to the users to adjust. I'd recommend at least three months, a semester, or even a year being better for very popular and/or complex endpoints.
+{% endhint %}
 
-#### <mark style="color:purple;">Publish Migration guide(s)</mark>
+### <mark style="color:purple;">Publish Migration guide(s)</mark>
 
-Writing migration guides if there are new alternatives to the deprecated endpoints.&#x20;
+Write migration guides if there are new alternatives to the deprecated endpoints.&#x20;
 
 This will ensure that users can transition smoothly to new endpoints without any service interruption. If there will be no alternative provided, this needs to be stated in the documentation in a very clear manner, explaining why (business pivot, technical issue, etc.).&#x20;
 
 The guides need to be published long enough before the actual deprecation to give time to users to adjust. Don't be afraid to be proactive with emailing, either.
 
-#### <mark style="color:purple;">Update the Open API Spec</mark>
+### <mark style="color:purple;">Update the Open API Spec</mark>
 
-The Open API Spec, if presented in the documentation, could always use a check to make sure the mention "deprecated" is present where it should be.
+The Open API Spec could always use a check to make sure the mention "deprecated" is present where it should be.
 
 This is usually a '`deprecated`' property added to the endpoint, set as '`true`'. It is useful to mention the coming deprecation in the endpoint description as well.
 
@@ -115,32 +120,41 @@ paths:
 
 ```
 
-#### <mark style="color:purple;">Check for Deprecation Notices within the code</mark>&#x20;
+### <mark style="color:purple;">Check for Deprecation Notices within the code</mark>&#x20;
 
-Developers often add warnings into the code of the API, which will display a deprecation notice in the header of the request (for REST API). Those are called the Deprecation and the Sunset header.
+Developers often add warnings into the code of the API, which will display a deprecation notice in the header of the request (for REST API). Those are called the Deprecation and the Sunset headers.
 
-**The Deprecation & Sunset Header (**[**RFC 8594**](https://www.rfc-editor.org/rfc/rfc8594)**)**
+#### **The Sunset Header (**[**RFC 8594**](https://www.rfc-editor.org/rfc/rfc8594)**)**
+
+The Sunset HTTP response header field allows a server to communicate the fact that a resource is expected to become unresponsive at a specific point in time. The Sunset header contains a single timestamp which advertises the point in time when the resource is expected to become unresponsive.
+
+The Sunset Header is a standardized way to announce deprecation, which is one of the most efficient way to proceed.
 
 ```
 HTTP/1.1 200 OK
-Deprecation: Sat, 01 Jul 2023 00:00:00 GMT
 Sunset: Sat, 01 Jan 2024 00:00:00 GMT
 ```
+
+***
+
+#### The Deprecated directive (for GraphQL)
 
 For GraphQL APIs, it is possible to use the `@deprecated` directive in the schema to mark fields or queries as deprecated, optionally including a message.
 
 ```graphql
-type Query {
-  oldField: String @deprecated(reason: "Use newField instead.")
+type MyType {
+  id: ID!
+  oldField: String @deprecated(reason: "oldField is deprecated. Use newField instead.")
   newField: String
+  deprecatedField: String @deprecated
 }
 ```
 
 ***
 
-**Deprecation notice in the response**
+#### **Deprecation notice in the response**
 
-Independently of the header, developers can also add a deprecation warning in the response body of the request, telling the users the endpoint will be deprecated soon.&#x20;
+Independently of the header, developers can also add a deprecation warning in the response body of the HTTP request, saying the endpoint will be deprecated soon.&#x20;
 
 As a technical writer, you can give it a test, and mention it to the technical teams if you see those are missing. You can also contribute to crafting the warning messages so they are standardized across all channels.&#x20;
 
@@ -157,17 +171,26 @@ As a technical writer, you can give it a test, and mention it to the technical t
 
 ```
 
-{% hint style="success" %}
-The best course of action is definitely to combine all those elements to insure your clients know way in advance what is coming, and how to prepare.&#x20;
-{% endhint %}
+***
+
+## <mark style="color:purple;">So, what's the best way to proceed?</mark>
+
+The best course of action is definitely to combine all of the above:
+
+* Working on a release note in advance and sending it by email several times as the deadline approaches (once way early, once a month before sunsetting, and a final warning a week before)
+* Having a deprecation timeline page in the documentation that is easy to find (emails can point towards it for more details) and that remains there at all times,
+* Publishing migration guides in advance, providing users with alternative options to perform the task they need to perform,
+* Having warnings embedded in the API code through the Sunset Header (for REST APIs) and using the @Deprecated directive for GraphQL APIs,
+* Once the endpoints are deprecated:
+  * Marking those endpoints as deprecated in the Open API Spec,
+  * Having warnings in the JSON responses stating the endpoint is deprecated,
+  * Adding links to the relevant migration guides and/or alternative endpoints in the Open API spec endpoint description.
 
 {% hint style="danger" %}
-Also, I would consider waiting on deleting the deprecated endpoints code once they are officially deprecated, as there might always be a few clients relying on those who missed the warnings! Having a backup for those guys might come handy.
+Finally, I would consider waiting on deleting the deprecated endpoints code once they are officially deprecated (I know, its hard). But there might always be a few clients relying on those who missed the warnings! Having a backup for those guys might come handy, even if it is just to delay the sunsetting of a few months.
 {% endhint %}
 
-
-
-<figure><img src="../.gitbook/assets/15jtpw.jpg" alt=""><figcaption><p>Also, maybe avoid deprecating all the good options at once :) Good luck!</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/15jtpw.jpg" alt=""><figcaption><p>Also, maybe avoid deprecating all the good options at once :)</p></figcaption></figure>
 
 
 
