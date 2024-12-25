@@ -14,5 +14,5 @@ _**Tools: Retype, Visual Studio Code (markdown, yml), Postman for collections an
 
 <figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption><p>The new Quable developer portal built with Retype</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>The previous technical documentation of Quable (on Readme)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>The previous technical documentation of Quable (on Readme)</p></figcaption></figure>
 

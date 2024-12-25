@@ -11,4 +11,4 @@ Quanticfy is a data analytics solution for Shopify owners. It is customer and UT
 For this project, we are working with the Intercom CMS and AI-powered Chatbot.\
 The Help Center is accessible here: [https://intercom-help.eu/the-quantic-factory/en/](https://intercom-help.eu/the-quantic-factory/en/)
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Screenshot from the Quanticfy Help Center</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Screenshot from the Quanticfy Help Center</p></figcaption></figure>

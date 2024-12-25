@@ -14,5 +14,5 @@ All content was written in Markdown.
 
 <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>Screenshot of the thematic pages featuring important datasets by topic. This is now accessible from the platform's homepage.</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>The COVID-19 datasets dedicated page</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>The COVID-19 datasets dedicated page</p></figcaption></figure>
 
