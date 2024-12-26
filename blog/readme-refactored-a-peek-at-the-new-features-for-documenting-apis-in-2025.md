@@ -104,4 +104,4 @@ Last, but not least, there will be a much more detailed way to track user's usag
 
 This concludes our first tour of the coming features for 2025 (there are more presented in the video but I chose to focus on the ones I will most likely be using in the context of my work).
 
-I look forward to testing them all on concrete projects, and will most likely post updates and test use cases on this blog. :thumbsup:
+I look forward to testing them all on concrete projects. Stay tuned for updates and use cases on this blog. :thumbsup:
