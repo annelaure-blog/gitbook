@@ -1,5 +1,6 @@
 ---
 icon: code
+layout: editorial
 ---
 
 # "Readme Refactored": A Peek at the New Features for Documenting APIs in 2025
@@ -54,6 +55,8 @@ Readme were kind enough to provide three built-in components: accordion, cards, 
 <div align="center"><figure><img src="../.gitbook/assets/image (2) (1).png" alt="" width="278"><figcaption><p>The MdX components in Readme Refactored</p></figcaption></figure></div>
 
 I am already excited to redo all the introductory / overview pages of all the sections of the docs, using the clickable cards to make navigation a little more sexy than just a bullet point list.&#x20;
+
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption><p>The accordion, cards and tabs interactive mdX components</p></figcaption></figure>
 
 Columns are a nice addition too to format pages in a more diverse way. Tabs will make it easier to display language-dependent technical information or code snippets. I like using accordion for troubleshooting tips or specific instructions for a sub-use-case, without adding too much length to the main content.
 
