@@ -28,7 +28,7 @@ It is called "Readme Refactored", and below is a breakdown of the most exciting 
 
 ***
 
-## <mark style="color:purple;">A pick at Readme new features</mark>
+## <mark style="color:purple;">A peek at Readme new features</mark>
 
 {% embed url="https://www.youtube.com/watch?v=CIhJ1uWyLhk" %}
 
