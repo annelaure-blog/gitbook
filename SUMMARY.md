@@ -29,3 +29,4 @@
 * ["You Are Not Expected to Understand This" - 26 Stories Telling the History of Code](blog/you-are-not-expected-to-understand-this-26-stories-telling-the-history-of-code.md)
 * ["Close to the Machine": How Ellen Ullman's books inspired me as a (technical) writer](blog/close-to-the-machine-how-ellen-ullmans-books-inspired-me-as-a-technical-writer.md)
 * ["Readme Refactored": A Peek at the New Features for Documenting APIs in 2025](blog/readme-refactored-a-peek-at-the-new-features-for-documenting-apis-in-2025.md)
+* [Ad Tech & Marketing Attribution 101](blog/ad-tech-and-marketing-attribution-101.md)
