@@ -5,7 +5,7 @@ Ever wondered how online selling companies operates when it comes to advertising
 I am no expert in either fields, but building user help centers and developer portals in both industries has helped me gain some general knowledge I am sharing in this article.\
 \
 \- Attribution\
-\- Lookback window\
+\- Lookback window: A lookback window is the period of time in which a converstion can be attributed to an ad.  The timer begins once a user sees the ad (post-view) or clicks on the ad (post-click), to when they make a purchase.\
 \- Campaigns\
 \- ROAS and Effective ROAS\
 \- **Product Match** is the relationship between the purchased product and the advertised one.
