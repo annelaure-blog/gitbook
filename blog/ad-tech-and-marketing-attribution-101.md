@@ -8,4 +8,8 @@ I am no expert in either fields, but building user help centers and developer po
 \- Lookback window\
 \- Campaigns\
 \- ROAS and Effective ROAS\
-\-&#x20;
+\- **Product Match** is the relationship between the purchased product and the advertised one.
+
+* **Same Product** means a conversion is counted when the product featured in the ad is the same product that is purchased.
+* **Same Category** means a conversion is counted if the product purchased is a product made by the same brand running the ad and in the same category as the product featured in the ad&#x20;
+* **Same Brand** means a conversion will be counted if they click or view the ad and purchase any product from the same brand within the lookback window
