@@ -3,20 +3,6 @@ icon: book
 cover: >-
   https://images.unsplash.com/photo-1531854159684-1733bde6d7a0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwxMHx8c2FuJTIwZnJhbnNpc2NvfGVufDB8fHx8MTczMzY1Nzk4N3ww&ixlib=rb-4.0.3&q=85
 coverY: 0
-layout:
-  cover:
-    visible: true
-    size: full
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: false
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # "Close to the Machine": How Ellen Ullman's books inspired me as a (technical) writer

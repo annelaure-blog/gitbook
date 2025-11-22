@@ -3,20 +3,6 @@ icon: laptop-code
 cover: >-
   https://images.unsplash.com/photo-1617036544881-b5416ccf84fe?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwyfHxzeXN0ZW18ZW58MHx8fHwxNzM0ODY4MDEwfDA&ixlib=rb-4.0.3&q=85
 coverY: 0
-layout:
-  cover:
-    visible: false
-    size: full
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: false
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Documenting API Endpoint Deprecation: the Art of Planning Ahead
@@ -65,17 +51,13 @@ Deprecation are rarely discussed in isolation: they are part of the API roadmap 
 Every company has its own process, but it usually follows those general steps:
 
 * [x] **Strategic Prioritization**\
-  Product & technical lead(s) craft the next version's priorities, to better balance user's needs with technical constraints and business goals.\
-
+  Product & technical lead(s) craft the next version's priorities, to better balance user's needs with technical constraints and business goals.<br>
 * [x] **Collaborative Design**\
-  Once the priorities are clear, the roadmap is transferred to an API team, usually composed of senior technical profiles (engineers and architects) who define the structure and design guidelines. It is usually the stage where technical writers are involved, so we can start documenting the changes to come (_note that I have been asked before to prepare a deprecation notice within 24 hours before the actual deprecation, so anything can happen, but I would not recommend_).\
-
+  Once the priorities are clear, the roadmap is transferred to an API team, usually composed of senior technical profiles (engineers and architects) who define the structure and design guidelines. It is usually the stage where technical writers are involved, so we can start documenting the changes to come (_note that I have been asked before to prepare a deprecation notice within 24 hours before the actual deprecation, so anything can happen, but I would not recommend_).<br>
 * [x] **Validation**\
-  Depending on the criticality of the changes, the new API has to be approved by a technical board, and sometimes by executives as well. Legal can be involved too, if applicable.\
-
+  Depending on the criticality of the changes, the new API has to be approved by a technical board, and sometimes by executives as well. Legal can be involved too, if applicable.<br>
 * [x] I**mplementation & Documentation**\
-  That is when the actual changes are made to the API, that changes version (from 1.0 to 2.0 for instance). The chosen endpoints are deprecated, new ones might be added too. This is the perfect moment to update the API documentation, write migration guides, and craft deprecation notice pages and warning messages.\
-
+  That is when the actual changes are made to the API, that changes version (from 1.0 to 2.0 for instance). The chosen endpoints are deprecated, new ones might be added too. This is the perfect moment to update the API documentation, write migration guides, and craft deprecation notice pages and warning messages.<br>
 * [x] **Communication**\
   As the release of the new version occurs, there should be emails sent to clients, as well as announcements (internal and external). A changelog should list all the changes and be easily accessible in the documentation.
 
