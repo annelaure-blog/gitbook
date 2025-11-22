@@ -1,13 +1,21 @@
+---
+description: Lead Technical Writer - Retail Media
+---
+
 # 🟠 Criteo Developer Portal
 
-I have started a full-time contract for the Ad Tech company Criteo in July 2024. \
-\
-Since then, within the Integration Enablement & Addressability team, I am working on revamping the Developer Portal on all the three projects it contains: the Retailer Integration documentation, the Retail Media API one as well as the Commerce Marketing Solution API documentation.
+I have started a full-time contract for the Ad Tech company Criteo in July 2024. I since became a full-time employee in Barcelona (Spain) in September 2025.
 
-I have worked on defining a technical writing framework, a style guide and processes to help bring the documentation to a higher standard of clarity, searchability and exhaustiveness. We are also working on enhancing the API interactivity within Readme, as well as improving the update flow internally.
+After spending the first six months revamping outdated/not standardized content on the Retailer Integration & Retail Media API documentation, and ramping up on Criteo's tools and industry, I progressively took the lead of [the developer portal](https://developers.criteo.com/).
 
-My role involves to collaborate within my team and with several product teams (Commerce Video, Retail Media API, Delivery API) and also local Ops teams and R\&D, to add new content, update and improve existing one. I also contributed to the reflection about crafting a new homepage, and general user flow between Criteo resources and the Developer Portal.
+I now own the roadmap of Criteo’s developer portal for Retail Media API & Retailer Integration, working in coordination with Product, R\&D, APIDX, GTM and Ops on a highly technical, rapidly evolving product & industry (Retail Media).
 
-Testing and documenting the new Readme features planned for 2025 is also part of my role to see how Criteo's documentation can benefit from them the most in the future. This includes looking at the new editor, MDX availability as well as API interactivity features and Github sync, etc.
+* My achievements so far:
+  * I took the initiative to redesign & implement a new developer portal landing page as the current one was outdated and not optimized for technical users (using Codex) ([Github repo here](https://github.com/annelaure-blog/homepage_test)),
+  * I implemented the first Technical writing framework & roadmap at Criteo with all the content formatting, technical content automation and prompts, processes and governance rules,
+  * I designed and implemented a strategy to standardize API content automation to free some tech writing resources for cookbooks creation. To do so, I used Codex to develop scripts that generate standardized guides from our Open API Spec files, and automate all endpoints testing to generate up-to-date responses examples.
+  * I successfully coordinated the migration of our entire external technical documentation to Readme Refactored,&#x20;
+  * I am currently investigating & testing along with Product & R\&D docs' optimization for LLM & MCP.
 
-<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption><p>Redesign of Criteo's developer portal homepage</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+

@@ -42,7 +42,7 @@ All changes can now be done from one single interface (instead of having to go b
 
 <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>The "View mode"</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>The "Edit" mode</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>The "Edit" mode</p></figcaption></figure>
 
 ***
 
@@ -92,7 +92,7 @@ Also, this means having full control over our own version of the spec dedicated 
 
 There will be the possibility to have variables and security scheme imported from the Open API spec, but also to add custom variables like there are in [Postman collections](https://learning.postman.com/docs/sending-requests/variables/variables/). This is a great add to make the interactive documentation even more personalized for users, especially as API keys can be pre-populated with specific sets of variables.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>The "Personalized Docs" feature</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>The "Personalized Docs" feature</p></figcaption></figure>
 
 ***
 
