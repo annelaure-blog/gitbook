@@ -8,7 +8,7 @@
 ## Projects
 
 * [🟠 Criteo Developer Portal](projects/criteo-developer-portal.md)
-* [🔌 Popsink - Content Migration](projects/popsink-content-migration.md)
+* [🔌 Popsink - Documentation Migration](projects/popsink-documentation-migration.md)
 * [💻 Akeneo Developer Portal](projects/akeneo-developer-portal.md)
 * [🏡 WeFox Developer Portal](projects/wefox-developer-portal.md)
 * [👩‍💻 Quable Developer Portal](projects/quable-developer-portal.md)
