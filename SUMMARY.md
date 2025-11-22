@@ -20,6 +20,7 @@
 * [🇫🇷 Data.gouv.fr](projects/data.gouv.fr.md)
 * [🇫🇷 French Ministry of Foreign Affairs](projects/french-ministry-of-foreign-affairs.md)
 * [🐇 Hopper Research Blog](projects/hopper-research-blog.md)
+* [🔌 Popsink](projects/popsink.md)
 
 ## BLOG
 
