@@ -12,7 +12,7 @@ I gained lots of experience joining the [ContentSquare](https://contentsquare.co
 
 Since then, I work on mid-term to long-term contracts for SaaS companies and startups on creating user guides ([Quantic Factory,](https://www.quanticfy.io/) [Djust](https://fr.djust.io/), [Hyperline](projects/hyperline-user-documentation.md)), developers portals ([Quable](projects/quable-developer-portal.md), Akeneo), or both ([Rumo](projects/rumo-dashboard-and-api.md)) to adjust wording and UX writing in the product.&#x20;
 
-I have been working as a full-time contractor on [Criteo's developer portal ](https://developers.criteo.com/)since July 2024.\
+I have been working as a full-time contractor (now employee) on [Criteo's developer portal ](https://developers.criteo.com/)since July 2024. I am currently based in Barcelona, Spain.\
 \
 Clients can find me through [LinkedIn](https://www.linkedin.com/in/annelaurefreant/) or [Malt,](https://www.malt.fr/profile/annefreant) or by email: annelaure.freant-at-gmail.com.
 

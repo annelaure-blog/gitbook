@@ -4,7 +4,6 @@
 
 * [Anne-Laure Fréant](README.md)
 * [Resume](my-profile/resume.md)
-* [Skills, industries & tools](my-profile/skills-industries-and-tools.md)
 
 ## Projects
 
